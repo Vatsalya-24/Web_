@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Alegreya Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: top; /* Center content vertically */
+    min-height: 100vh;
+    background-color: #f0e8e8;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding-top:5px ;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: row;
+    gap: 65px; /* Adjust the spacing between nav items */
+}
+#navigation{
+	background-color: #070606;
+	height: 55px;
+	width: 600px;
+	justify-content: center;
+	padding-top: 10px;
+}
+
+ul li {
+	position: relative;
+	list-style: none;
+	width: 32px;
+	height: 32px;
+	border-radius: 40px;
+	background: #252525;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	box-shadow: 0 0 0 2px #111111;
+	transition: 300ms;
+}
+
+ul li:hover {
+	width: 160px;
+	box-shadow: 0 0 0 2px var(--bg-color);
+}
+
+ul li::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 32px;
+	background: var(--bg-color);
+	opacity: 0;
+	transition: 300ms;
+}
+
+ul li:hover::before {
+	opacity: 1;
+}
+
+ul li span {
+	position: absolute;
+}
+
+ul li i {
+	color: #fff;
+	font-size: 2em;
+	transition: 300ms;
+	transition-delay: 150ms;
+}
+
+ul li:hover i {
+	transform: scale(0);
+	color: #fff;
+	transition-delay: 0s;
+}
+
+ul li .text {
+	color: #1e1e1e;
+	font-size: 1.5em;
+	z-index: 1;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 0.024em;
+	opacity: 0;
+	transition: 300ms;
+	letter-spacing: -0.125px;
+}
+
+ul li:hover .text {
+	opacity: 1;
+}
