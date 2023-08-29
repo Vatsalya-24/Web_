@@ -14,8 +14,9 @@ body {
     justify-content: center; /* Center content horizontally */
     align-items: top; /* Center content vertically */
     min-height: 100vh;
-    background-color: #f0e8e8;
+    background-color: #111312;
 }
+
 ul {
     list-style: none;
     margin: 0;
@@ -27,11 +28,13 @@ ul {
     gap: 65px; /* Adjust the spacing between nav items */
 }
 #navigation{
-	background-color: #070606;
+	background-color: #111312;
 	height: 55px;
 	width: 600px;
 	justify-content: center;
 	padding-top: 10px;
+	border-radius: 50px;
+	opacity: 1;
 }
 
 ul li {
@@ -45,8 +48,9 @@ ul li {
 	display: flex;
 	align-items: center;
 	justify-content:center;
-	box-shadow: 0 0 0 2px #111111;
+	box-shadow: 0 0 0 2px #232222;
 	transition: 300ms;
+	opacity: 1;
 }
 
 ul li:hover {
